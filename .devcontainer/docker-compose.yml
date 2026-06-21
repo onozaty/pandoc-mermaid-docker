@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../..:/workspaces:cached
+      - claude-config:/home/ubuntu/.claude
+      - gh-config:/home/ubuntu/.config/gh
+    command: sleep infinity
+
+volumes:
+  claude-config:
+  gh-config:
