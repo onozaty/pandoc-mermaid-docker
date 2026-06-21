@@ -22,7 +22,7 @@ for INPUT_FILE in "$INPUT_DIR"/*.md; do
     /input/"$BASENAME.md" \
     -o /output/"$BASENAME.pdf" \
     --defaults /pandoc-defaults.yaml
-  echo "Done."
+  echo "done."
 done
 
 echo "Done. Output: $OUTPUT_DIR"
